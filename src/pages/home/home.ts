@@ -81,4 +81,30 @@ export class HomePage {
           });
           prompt.present();
         }
+
+        showRadio(){
+          let showradio=this.alertControl.create();
+          showradio.setTitle('Lightsaber color');
+          showradio.addInput({
+            type:'radio',
+            label:'blue',
+            value:'blue',
+            checked:false
+          });
+          showradio.addInput({
+            type:'radio',
+            label:'red',
+            value:'red',
+            checked:true
+          });
+          showradio.addInput({
+            type:'radio',
+            label:'yellow',
+            value:'yellow',
+            checked:false
+          });
+          showradio.present();
+        };
+
+
 }
