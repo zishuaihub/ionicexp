@@ -1,8 +1,19 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons start>
+    <button ion-button icon-start icon-only>
+      <ion-icon name="contact"></ion-icon>
+    </button>
+    </ion-buttons>
     <ion-title>
       Ionic Blank
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-start icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 </ion-header>
 
@@ -18,5 +29,96 @@
     <li (click)="showPrompt()">输入弹窗</li>
     <li (click)="showRadio()">单选弹窗</li>
   </ul>
+
+  <ion-item>
+    <ion-icon name="logo-twitter" item-start></ion-icon>
+    Follwers
+    <ion-badge color="secondary" item-end>260k</ion-badge>
+  </ion-item>
+  <p>颜色</p>
+  <button ion-button>默认按钮</button>
+  <button ion-button color="secondary">次要</button>
+  <button ion-button color="danger">危险</button>
+  <button ion-button color="light">高亮</button>
+  <button ion-button color="dark">暗色调</button>
+  <p>形状</p>
+  <button ion-button full>饱满(两侧无边框)</button>
+  <button ion-button block>块级的</button>
+  <button ion-button round>椭圆的</button>
+  <p>轮廓</p>
+  <button ion-button full outline>饱满</button>
+  <button ion-button block outline>块级的</button>
+  <button ion-button round outline>椭圆的</button>
+  <p>图标</p>
+  <button ion-button icon-start><ion-icon name="star"></ion-icon> icon-start图标</button>
+  <button ion-button icon-end>icon-end图标<ion-icon name="star"></ion-icon> </button>
+  <button ion-button icon-only><ion-icon name="star"></ion-icon> </button>
+  <p>尺寸</p>
+  <button ion-button large>large按钮</button>
+  <button ion-button>默认按钮</button>
+  <button ion-button small>small按钮</button>
+  <button ion-button clear>clear按钮</button>
+  <button ion-button solid>solid按钮</button>
+  <button ion-button strong>strong按钮</button>
+  <ion-list>
+    <ion-item>左图标按钮
+      <button ion-button outline item-end icon-start> <ion-icon name="star"></ion-icon>左图标</button>
+    </ion-item>
+    <ion-item>右图标按钮
+      <button ion-button outline item-end icon-end>右图标 <ion-icon name="star"></ion-icon></button>
+    </ion-item>
+  </ion-list>
+<ion-card>
+  <ion-card-header>
+    卡片头：
+    启动一个新的Ionic 2应用
+  </ion-card-header>
+  <ion-card-content>
+    卡片内容：
+    用start命令来创建一个新的Ionic 2应用。别忘了添加--v2来指定这是一个 Ionic 2 的应用程序。再添加一个tutorial参数，指定使用tutorial模版创建该应用。这样一个基于TypeScript的Ionic 2应用就被成功创建了。
+  </ion-card-content>
+</ion-card>
+  <ion-card>
+    <ion-card-header>
+      卡片列表头
+    </ion-card-header>
+    <button ion-item><ion-icon name="cart" item-start></ion-icon>第1行</button>
+    <button ion-item><ion-icon name="medical" item-start></ion-icon>第2行</button>
+    <button ion-item><ion-icon name="cafe" item-start></ion-icon>第3行</button>
+    <button ion-item><ion-icon name="paw" item-start></ion-icon>第4行</button>
+    <button ion-item><ion-icon name="beer" item-start></ion-icon>第5行</button>
+    <button ion-item><ion-icon name="planet" item-start></ion-icon>第6行</button>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>卡片图表</ion-card-header>
+    <img src="assets/images/badu-live.png" alt="">
+    <ion-card-content>
+      <ion-title>内容标题</ion-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+<ion-row>
+  <ion-col>
+    <ion-buttons>
+      <button ion-button icon-start>
+        <ion-icon name="star"></ion-icon>关注
+      </button>
+    </ion-buttons>
+  </ion-col>
+  <ion-col>
+    <ion-buttons>
+      <button ion-button icon-start>
+        <ion-icon name="musical-notes"></ion-icon>收听
+      </button>
+    </ion-buttons>
+  </ion-col>
+</ion-row>
+
+
+
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 

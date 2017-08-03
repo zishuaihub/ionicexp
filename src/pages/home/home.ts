@@ -103,6 +103,12 @@ export class HomePage {
             value:'yellow',
             checked:false
           });
+          showradio.addButton('cancel');
+          showradio.addButton({
+            text:'Okay',
+            handler: data=>{alert(data);
+              }
+          })
           showradio.present();
         };
 
