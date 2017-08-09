@@ -1,20 +1,30 @@
 <ion-header>
-  <ion-navbar>
+
+  <ion-toolbar>
+
     <ion-buttons start>
+      <button ion-button icon-only  menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title >
+      Ionic Blank
+    </ion-title>
+
+    <ion-buttons end>
     <button ion-button icon-start icon-only>
       <ion-icon name="contact"></ion-icon>
     </button>
-    </ion-buttons>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-    <ion-buttons end>
+
+
+
       <button ion-button icon-start icon-only>
         <ion-icon name="search"></ion-icon>
       </button>
     </ion-buttons>
 
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
@@ -115,10 +125,72 @@
   </ion-col>
 </ion-row>
 
-
-
-
     </ion-card-content>
   </ion-card>
+
+  <ion-fab right bottom>
+    <button ion-fab > <ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab> <ion-icon name="logo-facebook"></ion-icon> </button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-fab-list>
+
+  </ion-fab>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 text-center>hello world</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 text-center>hah</ion-col>
+      <ion-col col-6 text-center>hah</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 text-center>wo</ion-col>
+      <ion-col col-9 text-center>ni</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-sm-9>
+        This column will be 12 columns wide by default,9 columns at the small breakpoint,6 at the medium breakpoint, 4 at large, and 3 at xl.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item>
+      <ion-label color="secondary">内联标签</ion-label>
+      <ion-input placeholder="input输入"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" fixed>Fixed Label</ion-label>
+      <ion-input type="tel" placeholder="Tel Input"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block round color="primary" col-9 align-items-center>载入中</button>
 </ion-content>
 
+<ion-menu [content]="mycontent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>侧边菜单</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item>
+        首页
+      </button>
+      <button ion-item>
+        文章
+      </button>
+      <button ion-item>
+        联系
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent>
+
+</ion-nav>
